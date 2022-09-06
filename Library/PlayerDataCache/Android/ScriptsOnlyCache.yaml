@@ -1,7 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Ninja
+    - Acelerometer
+    - DigitalRubyShared.DemoScript
+    - DigitalRubyShared.FingersScript
+    - Menu
+    - MultiTouch
+    - TouchBack
+    - VirtualPad
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -10,9 +16,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
-    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -58,31 +61,37 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
-    fullTypeName: Ninja
-    methodName: TranslateDown
+    fullTypeName: Menu
+    methodName: Load
   - assembly: Assembly-CSharp
-    fullTypeName: Ninja
-    methodName: Scale
+    fullTypeName: Menu
+    methodName: Load
   - assembly: Assembly-CSharp
-    fullTypeName: Ninja
-    methodName: TranslateLeft
+    fullTypeName: Menu
+    methodName: Load
   - assembly: Assembly-CSharp
-    fullTypeName: Ninja
-    methodName: Scale
+    fullTypeName: Menu
+    methodName: Load
   - assembly: Assembly-CSharp
-    fullTypeName: Ninja
-    methodName: TranslateRight
+    fullTypeName: Menu
+    methodName: Load
   - assembly: Assembly-CSharp
-    fullTypeName: Ninja
-    methodName: TranslateUp
+    fullTypeName: Menu
+    methodName: Load
   - assembly: Assembly-CSharp
-    fullTypeName: Ninja
-    methodName: RotateRight
+    fullTypeName: Menu
+    methodName: Load
   - assembly: Assembly-CSharp
-    fullTypeName: Ninja
-    methodName: RotateLeft
+    fullTypeName: Menu
+    methodName: Load
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: Load
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: Load
   sceneClasses:
-    Assets/Ninja Character/Demo/Demo Scene.unity:
+    Assets/Scenes/Acelerometer.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -101,15 +110,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
-      Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
-    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -118,29 +121,306 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1586}
     - Class: 114
-      Script: {instanceID: 2206}
+      Script: {instanceID: 2880}
     - Class: 114
-      Script: {instanceID: 2640}
+      Script: {instanceID: 3182}
     - Class: 114
-      Script: {instanceID: 2866}
+      Script: {instanceID: 5282}
     - Class: 114
-      Script: {instanceID: 3166}
+      Script: {instanceID: 5710}
     - Class: 114
-      Script: {instanceID: 4228}
+      Script: {instanceID: 5900}
     - Class: 114
-      Script: {instanceID: 4496}
+      Script: {instanceID: 6052}
     - Class: 114
-      Script: {instanceID: 5262}
+      Script: {instanceID: 6660}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Gestures.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 5872}
+      Script: {instanceID: 1586}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 1704}
     - Class: 114
-      Script: {instanceID: 6368}
+      Script: {instanceID: 2398}
     - Class: 114
-      Script: {instanceID: 23162}
+      Script: {instanceID: 2880}
     - Class: 114
-      Script: {instanceID: 25954}
+      Script: {instanceID: 3182}
+    - Class: 114
+      Script: {instanceID: 5282}
+    - Class: 114
+      Script: {instanceID: 5710}
+    - Class: 114
+      Script: {instanceID: 5900}
+    - Class: 114
+      Script: {instanceID: 6052}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Menu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1586}
+    - Class: 114
+      Script: {instanceID: 2212}
+    - Class: 114
+      Script: {instanceID: 2652}
+    - Class: 114
+      Script: {instanceID: 2880}
+    - Class: 114
+      Script: {instanceID: 3182}
+    - Class: 114
+      Script: {instanceID: 4244}
+    - Class: 114
+      Script: {instanceID: 4514}
+    - Class: 114
+      Script: {instanceID: 5282}
+    - Class: 114
+      Script: {instanceID: 5710}
+    - Class: 114
+      Script: {instanceID: 5900}
+    - Class: 114
+      Script: {instanceID: 6052}
+    - Class: 114
+      Script: {instanceID: 6402}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/MutiTouch.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1586}
+    - Class: 114
+      Script: {instanceID: 2542}
+    - Class: 114
+      Script: {instanceID: 2880}
+    - Class: 114
+      Script: {instanceID: 3182}
+    - Class: 114
+      Script: {instanceID: 5282}
+    - Class: 114
+      Script: {instanceID: 5710}
+    - Class: 114
+      Script: {instanceID: 5900}
+    - Class: 114
+      Script: {instanceID: 6052}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Touch.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1586}
+    - Class: 114
+      Script: {instanceID: 2880}
+    - Class: 114
+      Script: {instanceID: 3182}
+    - Class: 114
+      Script: {instanceID: 5282}
+    - Class: 114
+      Script: {instanceID: 5710}
+    - Class: 114
+      Script: {instanceID: 5900}
+    - Class: 114
+      Script: {instanceID: 6052}
+    - Class: 114
+      Script: {instanceID: 6078}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/VirtualPad.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1586}
+    - Class: 114
+      Script: {instanceID: 2880}
+    - Class: 114
+      Script: {instanceID: 3182}
+    - Class: 114
+      Script: {instanceID: 4876}
+    - Class: 114
+      Script: {instanceID: 5282}
+    - Class: 114
+      Script: {instanceID: 5710}
+    - Class: 114
+      Script: {instanceID: 5900}
+    - Class: 114
+      Script: {instanceID: 6052}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -182,6 +462,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 228901c5e5112b85c88e54c84b918d2b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScript
   - hash:
       serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
@@ -256,10 +542,28 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 13be7938b28e7e1ca8c877afa1f221f7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersScript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoAsteroidScript
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b8850a032ef34ab997ab76047540e363
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MultiTouch
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -568,6 +872,12 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 3aaf0a09bc03c271877a2713d824e62d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VirtualPad
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -676,6 +986,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menu
+  - hash:
+      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.State.dll
     namespaceName: Unity.VisualScripting
@@ -706,10 +1022,22 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 142d51fe5aecd4a73e38a30dd0f61e84
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TouchBack
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: eba0986521fc02136fb9ac95765cc14d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Ninja
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -746,6 +1074,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Acelerometer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -932,13 +1266,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: eba0986521fc02136fb9ac95765cc14d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Ninja
   platform: 13
   scenePathNames:
-  - Assets/Ninja Character/Demo/Demo Scene.unity
-  playerPath: C:/Users/ELIAN/Desktop/Unity/ninja.apk
+  - Assets/Scenes/Menu.unity
+  - Assets/Scenes/Touch.unity
+  - Assets/Scenes/MutiTouch.unity
+  - Assets/Scenes/VirtualPad.unity
+  - Assets/Scenes/Acelerometer.unity
+  - Assets/Scenes/Gestures.unity
+  playerPath: C:/Users/ELIAN/Downloads/Prueba7.apk
